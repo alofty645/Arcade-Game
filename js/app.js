@@ -23,7 +23,7 @@ class Enemy {
       60 + player.y > this.y
     ) {
       player.x = 202;
-      player.y = 405;
+      player.y = 400;
     }
   }
   // Renders the enemy into the game
@@ -46,13 +46,13 @@ class Player {
     if (kpress == "left" && this.x > 0) {
       this.x -= 102;
     }
-    if (kpress == "right" && this.x < 405) {
+    if (kpress == "right" && this.x < 400) {
       this.x += 102;
     }
     if (kpress == "up" && this.y > 0) {
       this.y -= 83;
     }
-    if (kpress == "down" && this.y < 405) {
+    if (kpress == "down" && this.y < 400) {
       this.y += 83;
     }
     if (this.y < 0) {
